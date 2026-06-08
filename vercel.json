@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/app/omarfarukcihs_gmail_com",
+      "destination": "/api/omarfarukcihs_gmail_com"
+    }
+  ]
+}

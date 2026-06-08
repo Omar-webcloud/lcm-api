@@ -4,7 +4,8 @@ export default function handler(req, res) {
   const numX = Number(x);
   const numY = Number(y);
 
-  const isNaturalNumber = (n) => Number.isInteger(n) && n > 0;
+  const isNaturalNumber = (n) =>
+    Number.isInteger(n) && n > 0;
 
   if (!isNaturalNumber(numX) || !isNaturalNumber(numY)) {
     res.setHeader("Content-Type", "text/plain");
@@ -23,4 +24,3 @@ export default function handler(req, res) {
   res.setHeader("Content-Type", "text/plain");
   return res.status(200).send(String(lcm));
 }
-
